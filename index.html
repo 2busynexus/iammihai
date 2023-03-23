@@ -46,17 +46,20 @@
 
     <!-- HERO -->
 
-    <section class="d-flex align-items-center min-vh-100"  id="home">
+    <section class="hero d-flex align-items-center"  id="home">
 
         <div class="container">
             <div class="row flex-column-reverse flex-md-row justify-content-center align-items-center text-md-start text-center">
                 <div class="col-6">
-                    <h1>Hi!</h1>
-                    <h1>I am Mihai</h1>
-                    <h3>a back-end developer</h3>
+                    <span class="hello px-5 py-2 fs-4 bg-danger">Hi!</span>
+                    <h1 class="pt-3 fw-bold">I am Mihai</h1>
+                    <h2 class="fw-light">a back-end developer</h>
                 </div>
-                <div class="col-12 col-md-6 pb-md-0 pb-5"> 
-                        <img class="w-75 img-border" src="assets/img/profile.jpeg" alt="profile picture">
+                <div class="col-12 col-md-6 pb-md-0 pb-5 d-flex justify-content-center"> 
+                    <div class="container img-frame">
+                        <img class="img-fluid img-profile" src="assets/img/profile.jpeg" alt="profile picture">
+                    </div>
+                        
                 </div>
             </div>
         </div>
@@ -64,22 +67,24 @@
     </section>
 
        <!-- About -->
-    <section id="about" class="p-5 bg-info">
+    <section id="about" class="p-5 bg-info bg-dark text-bg-dark">
         <div class="container">
 
             <div class="pt-5">
                 <h2>about me</h2>
             </div>
-
-            <div class="pt-5 pb-5">
-                <p>My name is Mihai Misai and I am a Developer. I changed my career from a Personal Trainer to a Developer. I like to code for fun, and when I'm not coding I spend time with my family, cooking, playing games, meeting with friends.</p>
+            <div class="row">
+                <div class="col-md-6 pt-5 pb-5">
+                    <p>My name is Mihai Misai and I am a Developer. I changed my career from a Personal Trainer to a Developer. I like to code for fun, and when I'm not coding I spend time with my family, cooking, playing games, meeting with friends.</p>
+                </div>
+      
             </div>
 
         </div>
     </section>
 
         <!-- Skills -->
-    <section id="skills" class="p-5 bg-primary">
+    <section id="skills" class="p-5">
         <div class="container">
             <div class="pt-5">
                 <h2>skills</h2>
@@ -127,76 +132,162 @@
     </section>
 
         <!-- Projects -->
-        <!--
-        <div id="projects">
-            <div>
+
+    <section class="p-5 bg-dark text-bg-dark" id="projects">
+        <div class="container">
+            <div class="pt-5">
                 <h2>projects</h2>
             </div>
-            <div>
 
-                <div>
-                    <img src="img/letterquiz.png" alt="Letter Quiz preview">
-                    <h4>Letter Quiz</h4>
-                    <p>This is a Flask game project where you have to answer based on a generated letter. You need to type in countries, cities, mountains etc that begins with that letter and if the answer is correct then a number of points will be allocated and stored in a database. I used to play this game on a piece of paper in school.</p>
-                    <hr>
-                    <h5>Languages used:</h5>
-                    <ul>
-                        <li>Flask</li>
-                        <li>Python</li>
-                        <li>HTML</li>
-                        <li>MySQL</li>
-                        <li>CSS</li>                                             
-                    </ul>
-                    <a href="https://letterquiz.mihaimisai.repl.co" target="_blank">Preview</a>
-                    <a href="https://github.com/2busynexus/letterquiz" target="_blank">GitHUB</a>
+            <div class="row row-cols-2 py-5 g-4">
+                <div class="col">
+                    <div class="card text-bg-dark border-light">
+                        <img src="img/letterquiz.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a Flask game project where you have to answer based on a generated letter. You need to type in countries, cities, mountains etc that begins with that letter and if the answer is correct then a number of points will be allocated and stored in a database. I used to play this game on a piece of paper in school.</p>
+                        </div>
+                        <div class="card-body d-flex justify-content-between px-5">
+                            <h3>HTML</h3>
+                            <h3>CSS</h3>
+                            <h3>Javascript</h3>
+                            <h3>Python</h3>
+                            <h3>Flask</h3>
+                            <h3>MySQL</h3>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Preview</a>
+                            <a href="#" class="btn btn-primary">GitHUB</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="img/filmapp.png" alt="Film app preview">
-                    <h4>Film App</h4>
-                    <p>This is a Python project connected to a SQlite database in which you can add/remove/update and check the list of movies inside the database. It's hosted on Replit and I enjoyed this project a lot since I learn how to connect and work with a database</p>
-                    <hr>
-                    <h5>Languages used:</h5>
-                    <ul> 
-                        <li>Python</li>
-                        <li>SQlite</li>
-                    </ul>
-                    <a href="https://replit.com/@MihaiMisai/Films?v=1" target="_blank">Preview</a>
-                    <a href="https://github.com/2busynexus/filmapp" target="_blank">GitHUB</a>
+                <div class="col">
+                    <div class="card text-bg-dark border-light">
+                        <img src="img/letterquiz.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a Python project connected to a SQlite database in which you can add/remove/update and check the list of movies inside the database. It's hosted on Replit and I enjoyed this project a lot since I learn how to connect and work with a database</p>
+                        </div>
+                        <div class="card-body d-flex justify-content-between px-5">
+                            <h3>Python</h3>
+                            <h3>MySQL</h3>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Preview</a>
+                            <a href="#" class="btn btn-primary">GitHUB</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="img/blackjack.png" alt="Blackjack preview">
-                    <h4>Blackjack</h4>
-                    <p>I made a Blackjack game with the same rules like in Las Vegas. It is a project I enjoyed very much for how close to the real Blackjack is, and how real the generation of cards is</p>
-                    <hr>
-                    <h5>Languages used:</h5>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                    <a href="https://2busynexus.github.io/blackjack/" target="_blank">Preview</a>
-                    <a href="https://github.com/2busynexus/blackjack" target="_blank">GitHUB</a>
+                <div class="col">
+                    <div class="card text-bg-dark border-light">
+                        <img src="img/blackjack.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">I made a Blackjack game with the same rules like in Las Vegas. It is a project I enjoyed very much for how close to the real Blackjack is, and how real the generation of cards is</p>
+                        </div>
+                        <div class="card-body d-flex justify-content-between px-5">
+                            <h3>HTML</h3>
+                            <h3>CSS</h3>
+                            <h3>Javascript</h3>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Preview</a>
+                            <a href="#" class="btn btn-primary">GitHUB</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="img/rockpaper.png" alt="Rock Paper Scissors preview">
-                    <h4>Rock Paper Scissors</h4>
-                    <p>In this project I replicated the famous Rock/Paper/Scissors game where as a player you can choose any from the 3 choices, and then from a Javascript generation the opponent will pick a choice also.</p>
-                    <hr>
-                    <h5>Languages used:</h5>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                    <a href="https://2busynexus.github.io/rock_scissors_paper/" target="_blank">Preview</a>
-                    <a href="https://github.com/2busynexus/rock_scissors_paper" target="_blank">GitHUB</a>
+                <div class="col">
+                    <div class="card text-bg-dark border-light">
+                        <img src="img/rockpaper.png" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">In this project I replicated the famous Rock/Paper/Scissors game where as a player you can choose any from the 3 choices, and then from a Javascript generation the opponent will pick a choice also.</p>
+                        </div>
+                        <div class="card-body d-flex justify-content-between px-5">
+                            <h3>HTML</h3>
+                            <h3>CSS</h3>
+                            <h3>Javascript</h3>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Preview</a>
+                            <a href="#" class="btn btn-primary">GitHUB</a>
+                        </div>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
+    </section>
+
+        <!--
+        <div>
+
+            <div>
+                <img src="" alt="Letter Quiz preview">
+                <h4>Letter Quiz</h4>
+                <p></p>
+                <hr>
+                <h5>Languages used:</h5>
+                <ul>
+                    <li>Flask</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>MySQL</li>
+                    <li>CSS</li>                                             
+                </ul>
+                <a href="https://letterquiz.mihaimisai.repl.co" target="_blank">Preview</a>
+                <a href="https://github.com/2busynexus/letterquiz" target="_blank">GitHUB</a>
+            </div>
+
+            <div>
+                <img src="" alt="Film app preview">
+                <h4>Film App</h4>
+                <p></p>
+                <hr>
+                <h5>Languages used:</h5>
+                <ul> 
+                    <li>Python</li>
+                    <li>SQlite</li>
+                </ul>
+                <a href="https://replit.com/@MihaiMisai/Films?v=1" target="_blank">Preview</a>
+                <a href="https://github.com/2busynexus/filmapp" target="_blank">GitHUB</a>
+            </div>
+
+            <div>
+                <img src="" alt="Blackjack preview">
+                <h4>Blackjack</h4>
+                <p>I</p>
+                <hr>
+                <h5>Languages used:</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <a href="https://2busynexus.github.io/blackjack/" target="_blank">Preview</a>
+                <a href="https://github.com/2busynexus/blackjack" target="_blank">GitHUB</a>
+            </div>
+
+            <div>
+                <img src="" alt="Rock Paper Scissors preview">
+                <h4>Rock Paper Scissors</h4>
+                <p></p>
+                <hr>
+                <h5>Languages used:</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <a href="https://2busynexus.github.io/rock_scissors_paper/" target="_blank">Preview</a>
+                <a href="https://github.com/2busynexus/rock_scissors_paper" target="_blank">GitHUB</a>
+            </div>
+            
+        </div>
+    </div>
 -->
         <!-- Contact -->
     <section class="p-5 bg-info">
