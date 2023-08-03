@@ -19,12 +19,16 @@
     border-radius: 50%;
 }
 
+.mongodb {
+    height: 4.5em;
+}
+
 #skills ion-icon
 {
     font-size: 4em;
 }
 
-#skills .mysql-logo {
+#skills .mysql-logo, .bootstrap-logo {
     font-size: 3.5em;
     line-height: 1.25em;
 }
